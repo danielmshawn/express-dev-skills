@@ -8,16 +8,10 @@
     <title>Dev Skills</title>
 </head>
 <body>
-    <a href="/">Return Home</a>
-    <h1>Dev Skills</h1>
-    <ul>
-      <% skills.forEach(function(s) { %>
-        <li>
-          <a href="/skills/<%= s.id %>"><%= s.skill %></a>
-            - 
-          <%= s.learned ? 'learned' : 'not learned' %>
-        </li>
-      <% }); %>
-    </ul>
+    <a href="/">Back Home</a>
+      |  
+    <a href="/skills"> All Dev Skills</a>
+    <h3><%= skill.skill %></h3>
+    <h3>Is it learned? <%= skill.learned ? 'Learned' : "Not Learned" %></h3>
   </body>
 </html>
